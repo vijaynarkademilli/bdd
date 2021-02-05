@@ -1,0 +1,250 @@
+16:02:43.000 From karate-config file 
+16:02:43.453 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/records?timeout=3000&max_bytes=300000
+1 > Accept: application/vnd.kafka.json.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:43.484 response time in milliseconds: 24.58
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.json.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
+16:02:43.484 status code was: 404, expected: 200, response time: 25, url: http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/records?timeout=3000&max_bytes=300000, response: {"error_code":40403,"message":"Consumer instance not found."}
+16:02:43.484 after scenario inside config 
+16:02:43.484 From karate-config file 
+16:02:43.516 [print] c=  30.0
+16:02:43.516 End of Test 
+16:02:43.516 after scenario inside config 
+16:02:43.516 From karate-config file 
+16:02:43.531 request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 327
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > SOAPAction: http://tempuri.org/Add
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+      <Add xmlns="http://tempuri.org/">
+        <intA>2</intA>
+        <intB>3</intB>
+      </Add>
+    </soap:Body>
+  </soap:Envelope>
+
+16:02:44.266 response time in milliseconds: 737.10
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:32:42 GMT
+1 < Server: Microsoft-IIS/8.0
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+1 < X-Powered-By-Plesk: PleskWin
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>5</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+16:02:44.266 [print] {
+  "Cache-Control": [
+    "private, max-age=0"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "Microsoft-IIS/8.0"
+  ],
+  "X-AspNet-Version": [
+    "2.0.50727"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ],
+  "X-Powered-By-Plesk": [
+    "PleskWin"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:32:42 GMT"
+  ]
+}
+
+16:02:44.266 [print] [
+  "Microsoft-IIS/8.0"
+]
+
+16:02:44.266 [print] Microsoft-IIS/8.0
+16:02:44.266 [print] xml
+16:02:44.266 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <AddResponse xmlns="http://tempuri.org/">
+      <AddResult>5</AddResult>
+    </AddResponse>
+  </soap:Body>
+</soap:Envelope>
+
+16:02:44.266 [print] 737
+16:02:44.266 [print] 200
+16:02:44.266 after scenario inside config 
+16:02:44.281 From karate-config file 
+16:02:44.297 [print] Non Static
+16:02:44.297 after scenario inside config 
+16:02:44.297 From karate-config file 
+16:02:44.344 [print] Success
+16:02:44.359 after scenario inside config 
+16:02:44.359 From karate-config file 
+16:02:44.359 [print] Static
+16:02:44.359 after scenario inside config 
+16:02:44.359 From karate-config file 
+16:02:44.391 [print] 1
+16:02:44.391 after scenario inside config 
+16:02:44.391 From karate-config file 
+16:02:44.406 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:44.687 response time in milliseconds: 281.83
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 3459
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 61cbf81bfdf001c8-SIN
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:32:44 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=AU%2BJxISsPN5MKJzWtHywMRBMw7%2FPD7QlSqLAkNo%2FiG7dukQDBD8CFHV72v7VP7xWCiM2LrCHFd0tw3hUULkmtM09nUVdBrlkEwI%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d084c4f0ff78a34502908eea055b6e1db1612521164; expires=Sun, 07-Mar-21 10:32:44 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0813596577000001c807bbf000000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+16:02:44.703 [print] {
+  "per_page": 6,
+  "total": 12,
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2,
+  "support": {
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
+    "url": "https://reqres.in/#support-heading"
+  }
+}
+
+16:02:44.719 after scenario inside config 
+16:02:44.734 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=37
+
+16:02:45.031 response time in milliseconds: 290.35
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:33 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+16:02:45.031 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:24:33 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:02:45.031 [print] xml
+16:02:45.031 [print] 290
+16:02:45.031 [print] <string xmlns="https://www.w3schools.com/xml/">98.6</string>
+

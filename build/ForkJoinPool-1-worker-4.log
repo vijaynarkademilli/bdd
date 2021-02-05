@@ -1,0 +1,160 @@
+16:02:42.984 From karate-config file 
+16:02:43.453 request:
+1 > GET http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/subscription
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:43.484 response time in milliseconds: 31.61
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
+16:02:43.500 status code was: 404, expected: 200, response time: 32, url: http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/subscription, response: {"error_code":40403,"message":"Consumer instance not found."}
+16:02:43.500 after scenario inside config 
+16:02:43.578 From karate-config file 
+16:02:43.578 request:
+1 > DELETE http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer
+1 > Accept: application/vnd.kafka.v2+json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:43.594 response time in milliseconds: 5.93
+1 < 204
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+
+16:02:43.594 after scenario inside config 
+16:02:43.594 From karate-config file 
+16:02:43.594 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 359
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > SOAPAction: https://www.w3schools.com/xml/CelsiusToFahrenheit
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+        <CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
+            <Celsius>37</Celsius>
+        </CelsiusToFahrenheit>
+    </soap:Body>
+</soap:Envelope>
+
+16:02:44.734 response time in milliseconds: 1135.64
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:33 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/"><CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult></CelsiusToFahrenheitResponse></soap:Body></soap:Envelope>
+
+16:02:44.734 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:24:33 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:02:44.734 [print] [
+  "Microsoft-IIS/7.5"
+]
+
+16:02:44.734 [print] Microsoft-IIS/7.5
+16:02:44.734 [print] xml
+16:02:44.734 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <CelsiusToFahrenheitResponse xmlns="https://www.w3schools.com/xml/">
+      <CelsiusToFahrenheitResult>98.6</CelsiusToFahrenheitResult>
+    </CelsiusToFahrenheitResponse>
+  </soap:Body>
+</soap:Envelope>
+
+16:02:44.734 [print] 1136
+16:02:44.734 [print] 200
+16:02:44.734 after scenario inside config 
+16:02:44.734 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=40
+
+16:02:45.672 response time in milliseconds: 925.22
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:34 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">104</string>
+
+16:02:45.672 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:24:34 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:02:45.672 [print] xml
+16:02:45.672 [print] 925
+16:02:45.672 [print] <string xmlns="https://www.w3schools.com/xml/">104</string>
+

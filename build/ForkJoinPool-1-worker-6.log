@@ -1,0 +1,160 @@
+16:02:42.984 From karate-config file 
+16:02:43.453 request:
+1 > POST http://192.168.1.62:8082/consumers/my-consumer-group
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 101
+1 > Content-Type: application/vnd.kafka.json.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"vijay_consumer","format":"json","auto.offset.reset":"earliest","auto.commit.enable":"false"}
+
+16:02:43.500 response time in milliseconds: 41.13
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+1 < Vary: Accept-Encoding, User-Agent
+{"instance_id":"vijay_consumer","base_uri":"http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer"}
+
+16:02:43.500 [print] {
+  "instance_id": "vijay_consumer",
+  "base_uri": "http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer"
+}
+
+16:02:43.516 [print] http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer
+16:02:43.516 after scenario inside config 
+16:02:43.531 From karate-config file 
+16:02:43.531 after scenario inside config 
+16:02:43.531 From karate-config file 
+16:02:43.609 after scenario inside config 
+16:02:43.625 From karate-config file 
+16:02:43.640 request:
+1 > POST http://www.dneonline.com/calculator.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 327
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > SOAPAction: http://tempuri.org/Add
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+      <Add xmlns="http://tempuri.org/">
+        <intA>2</intA>
+        <intB>3</intB>
+      </Add>
+    </soap:Body>
+  </soap:Envelope>
+
+16:02:44.297 response time in milliseconds: 649.65
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:32:42 GMT
+1 < Server: Microsoft-IIS/8.0
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+1 < X-Powered-By-Plesk: PleskWin
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AddResponse xmlns="http://tempuri.org/"><AddResult>5</AddResult></AddResponse></soap:Body></soap:Envelope>
+
+16:02:44.297 [print] {
+  "Cache-Control": [
+    "private, max-age=0"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "Server": [
+    "Microsoft-IIS/8.0"
+  ],
+  "X-AspNet-Version": [
+    "2.0.50727"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ],
+  "X-Powered-By-Plesk": [
+    "PleskWin"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:32:42 GMT"
+  ]
+}
+
+16:02:44.297 [print] [
+  "Microsoft-IIS/8.0"
+]
+
+16:02:44.297 [print] Microsoft-IIS/8.0
+16:02:44.297 [print] xml
+16:02:44.297 [print] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <AddResponse xmlns="http://tempuri.org/">
+      <AddResult>5</AddResult>
+    </AddResponse>
+  </soap:Body>
+</soap:Envelope>
+
+16:02:44.297 [print] 650
+16:02:44.297 [print] 200
+16:02:44.297 after scenario inside config 
+16:02:44.297 From karate-config file 
+16:02:44.312 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=37
+
+16:02:45.203 response time in milliseconds: 898.72
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:33 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+16:02:45.219 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:24:33 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:02:45.219 [print] xml
+16:02:45.219 [print] 899
+16:02:45.219 [print] <string xmlns="https://www.w3schools.com/xml/">98.6</string>
+
+16:02:45.219 after scenario inside config 

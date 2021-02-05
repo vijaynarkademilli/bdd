@@ -1,0 +1,111 @@
+16:02:43.000 From karate-config file 
+16:02:43.453 request:
+1 > POST http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/subscription
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 26
+1 > Content-Type: application/vnd.kafka.v2+json; charset=UTF-8
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"topics":["vijay_topic"]}
+
+16:02:43.500 response time in milliseconds: 47.27
+1 < 404
+1 < Content-Length: 61
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+{"error_code":40403,"message":"Consumer instance not found."}
+
+16:02:43.500 status code was: 404, expected: 204, response time: 47, url: http://192.168.1.62:8082/consumers/my-consumer-group/instances/vijay_consumer/subscription, response: {"error_code":40403,"message":"Consumer instance not found."}
+16:02:43.500 after scenario inside config 
+16:02:43.609 From karate-config file 
+16:02:43.609 [print] <info>
+  <id>101</id>
+  <tool>
+    <name>Karate</name>
+    <version>0.9.6</version>
+  </tool>
+</info>
+
+16:02:43.640 [print] 101
+16:02:43.640 [print] Karate
+16:02:43.640 after scenario inside config 
+16:02:43.687 From karate-config file 
+16:02:43.687 request:
+1 > POST http://dummy.restapiexample.com/api/v1/create
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 42
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: dummy.restapiexample.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"Vijay","salary":"123","age":"23"}
+
+16:02:45.219 response time in milliseconds: 1533.30
+1 < 200
+1 < Cache-Control: no-cache, private, max-age=31536000
+1 < Content-Length: 129
+1 < Content-Type: application/json
+1 < Date: Fri, 05 Feb 2021 10:32:44 GMT
+1 < Display: staticcontent_sol
+1 < Expires: Sat, 05 Feb 2022 10:32:44 GMT
+1 < Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < Referrer-Policy: 
+1 < Response: 200
+1 < Server: nginx/1.16.0
+1 < Vary: [Accept-Encoding, Accept-Encoding,Origin]
+1 < X-Ezoic-Cdn: Miss
+1 < X-Middleton-Display: staticcontent_sol
+1 < X-Middleton-Response: 200
+1 < X-Ratelimit-Limit: 60
+1 < X-Ratelimit-Remaining: 58
+1 < X-Sol: pub_site
+{"status":"success","data":{"name":"Vijay","salary":"123","age":"23","id":8044},"message":"Successfully! Record has been added."}
+
+16:02:45.219 [print] {
+  "data": {
+    "name": "Vijay",
+    "id": 8044,
+    "salary": "123",
+    "age": "23"
+  },
+  "message": "Successfully! Record has been added.",
+  "status": "success"
+}
+
+16:02:45.234 [print] 8044
+16:02:45.234 request:
+2 > GET http://dummy.restapiexample.com/api/v1/employee/8044
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: dummy.restapiexample.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:46.781 response time in milliseconds: 1540.46
+2 < 200
+2 < Cache-Control: no-cache, private, max-age=31536000
+2 < Content-Length: 83
+2 < Content-Type: application/json
+2 < Date: Fri, 05 Feb 2021 10:32:46 GMT
+2 < Display: staticcontent_sol
+2 < Expires: Sat, 05 Feb 2022 10:32:45 GMT
+2 < Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+2 < Referrer-Policy: 
+2 < Response: 200
+2 < Server: nginx/1.16.0
+2 < Vary: [Accept-Encoding, Accept-Encoding,User-Agent,Origin]
+2 < X-Ezoic-Cdn: Miss
+2 < X-Middleton-Display: staticcontent_sol
+2 < X-Middleton-Response: 200
+2 < X-Ratelimit-Limit: 60
+2 < X-Ratelimit-Remaining: 58
+2 < X-Sol: pub_site
+{"status":"success","data":null,"message":"Successfully! Record has been fetched."}
+
+16:02:46.781 [print] {
+  "data": null,
+  "message": "Successfully! Record has been fetched.",
+  "status": "success"
+}
+
+16:02:46.781 after scenario inside config 

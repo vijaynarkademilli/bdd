@@ -1,0 +1,104 @@
+16:02:43.000 From karate-config file 
+16:02:43.438 request:
+1 > GET http://192.168.1.62:8082/topics
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 192.168.1.62:8082
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+16:02:43.516 response time in milliseconds: 48.60
+1 < 200
+1 < Content-Type: application/vnd.kafka.v2+json
+1 < Date: Fri, 05 Feb 2021 10:32:43 GMT
+1 < Vary: Accept-Encoding, User-Agent
+["harris_topic3","pravalika_topic","shubh","topic3","vijay_topic","shalini","dhana_topic","manohar","veera_topic","_confluent_balancer_partition_samples","satyendra_topic","snehasish_topic","sasi","hemanth_topic","_confluent_balancer_api_state","Madhu-topic","_confluent-license","deekshit","_confluent_balancer_broker_samples","syed_topic","_confluent-telemetry-metrics"]
+
+16:02:43.516 [print] [
+  "harris_topic3",
+  "pravalika_topic",
+  "shubh",
+  "topic3",
+  "vijay_topic",
+  "shalini",
+  "dhana_topic",
+  "manohar",
+  "veera_topic",
+  "_confluent_balancer_partition_samples",
+  "satyendra_topic",
+  "snehasish_topic",
+  "sasi",
+  "hemanth_topic",
+  "_confluent_balancer_api_state",
+  "Madhu-topic",
+  "_confluent-license",
+  "deekshit",
+  "_confluent_balancer_broker_samples",
+  "syed_topic",
+  "_confluent-telemetry-metrics"
+]
+
+16:02:43.562 assertion failed: path: $[1], actual: 'pravalika_topic', expected: 'confluent', reason: not a sub-string
+16:02:43.562 after scenario inside config 
+16:02:43.562 From karate-config file 
+16:02:43.578 after scenario inside config 
+16:02:43.594 From karate-config file 
+16:02:43.640 after scenario inside config 
+16:02:43.719 From karate-config file 
+16:02:43.922 request:
+1 > POST https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 10
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: www.w3schools.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+Celsius=40
+
+16:02:44.875 response time in milliseconds: 957.73
+1 < 200
+1 < Cache-Control: private, max-age=0,public
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Fri, 05 Feb 2021 10:24:33 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="https://www.w3schools.com/xml/">104</string>
+
+16:02:44.875 [print] {
+  "Cache-Control": [
+    "private, max-age=0,public"
+  ],
+  "Content-Type": [
+    "text/xml; charset=utf-8"
+  ],
+  "Date": [
+    "Fri, 05 Feb 2021 10:24:33 GMT"
+  ],
+  "Server": [
+    "Microsoft-IIS/7.5"
+  ],
+  "Vary": [
+    "Accept-Encoding"
+  ],
+  "X-AspNet-Version": [
+    "4.0.30319"
+  ],
+  "X-Frame-Options": [
+    "SAMEORIGIN"
+  ],
+  "X-Powered-By": [
+    "ASP.NET"
+  ]
+}
+
+16:02:44.875 [print] xml
+16:02:44.875 [print] 958
+16:02:44.875 [print] <string xmlns="https://www.w3schools.com/xml/">104</string>
+
+16:02:44.875 after scenario inside config 
+16:02:44.891 From karate-config file 
+16:02:44.922 [print] 1
+16:02:44.922 after scenario inside config 

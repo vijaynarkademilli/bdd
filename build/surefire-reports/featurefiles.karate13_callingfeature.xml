@@ -1,0 +1,7 @@
+<testsuite failures="0" name="featurefiles/karate13_callingfeature.feature" skipped="0" tests="1" time="1.124157">
+  <testcase classname="featurefiles.karate13_callingfeature" name="CallingFeature Testcase 1" time="1.124157">
+    <system-out>* def result = call read("karate13_calledfeature.feature") ................ passed
+* print result ............................................................ passed
+* assert result.response.string._ == "104" ................................ passed</system-out>
+  </testcase>
+</testsuite>

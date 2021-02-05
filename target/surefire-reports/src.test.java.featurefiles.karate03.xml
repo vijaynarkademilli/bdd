@@ -1,0 +1,13 @@
+<testsuite failures="1" name="src/test/java/featurefiles/karate03.feature" skipped="0" tests="1" time="0.005949">
+  <testcase classname="src.test.java.featurefiles.karate03" name="xml test case6" time="0.005949">
+    <failure message="karate03.feature:48 - evaluation (js) failed: (xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:22 Expected ) but found eof&#13;&#10;(xml/info/tool[1]/name&#13;&#10;                      ^ in &lt;eval&gt; at line number 1 at column number 22&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">Given def xml = ........................................................... passed
+* match (xml/info/tool[1]/name == "Karate" ) &amp;&amp; (xml/info/tool[2]/name == "IntelliJ" ) . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate03.feature:48 - evaluation (js) failed: (xml/info/tool[1]/name, javax.script.ScriptException: &lt;eval&gt;:1:22 Expected ) but found eof&#13;
+(xml/info/tool[1]/name&#13;
+                      ^ in &lt;eval&gt; at line number 1 at column number 22
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* match (xml/info/tool[1]/name == "Karate" ) &amp;&amp; (xml/info/tool[2]/name == "IntelliJ" ) (karate03.feature:48)</failure>
+  </testcase>
+</testsuite>
